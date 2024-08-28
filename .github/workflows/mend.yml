@@ -37,7 +37,7 @@ jobs:
           ref: ${{ inputs.branch && inputs.branch || github.ref }}
 
       - name: Download agent
-        run: curl -fsSLJO https://github.com/whitesource/unified-agent-distribution/releases/download/v24.6.1/wss-unified-agent.jar
+        run: curl -fsSLJO https://github.com/whitesource/unified-agent-distribution/releases/download/v24.6.2/wss-unified-agent.jar
 
       - name: Verify JAR
         run: jarsigner -verify wss-unified-agent.jar
